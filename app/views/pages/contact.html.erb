@@ -1,0 +1,142 @@
+<section class="header-section">
+			<div id="map-canvas" style="height:350px">
+			  <script>
+				var
+				  lat = -37.81733,
+				  lon = 144.955652,
+				  infoText = [
+					'<div style="white-space:nowrap">',
+					  '<h5>CurLux</h5>',
+					  'Envato, level 13, 2<br>',
+					  'Elizabeth St, Melbourne, Victoria<br>',
+					  '3000, Australia',
+					'</div>'
+				  ],
+				  mapOptions = {
+					scrollwheel: false,
+					markers: [
+					  { latitude: lat, longitude: lon, html: infoText.join('') }
+					],
+					icon: {
+					  image: 'images/marker.png',
+					  iconsize: [72, 65],
+					  iconanchor: [12, 65],
+					},
+					latitude: lat,
+					longitude: lon,
+					zoom: 11
+				  };
+			  </script>
+			</div>
+		</section>
+		<section class="sep-bottom-2x">
+			<div class="container">
+			  <div class="row">
+				<div class="col-md-4 sep-top-2x">
+				  <h4 class="upper">CONTACT INFORMATION</h4>
+				  <div>
+					<!-- Start icon box-->
+					<div class="icon-box icon-xs sep-top-xs icon-gradient">
+					  <div class="icon-content img-circle"><i class="fa fa-map-marker"></i></div>
+					  <div class="icon-box-content">
+						<h6>Address</h6>
+						<p>Elizabeth St, Melbourne, Victoria<br>3000, Australia</p>
+					  </div>
+					</div>
+					<!-- End icon box-->
+					<!-- Start icon box-->
+					<div class="icon-box icon-xs sep-top-xs icon-gradient">
+					  <div class="icon-content img-circle"><i class="fa fa-phone"></i></div>
+					  <div class="icon-box-content">
+						<h6>Phone/Fax</h6>
+						<p>(+31) 143-553-809<br>(+31) 008-766-768</p>
+					  </div>
+					</div>
+					<!-- End icon box-->
+					<!-- Start icon box-->
+					<div class="icon-box icon-xs sep-top-xs icon-gradient">
+					  <div class="icon-content img-circle"><i class="fa fa-envelope"></i></div>
+					  <div class="icon-box-content">
+						<h6>Email</h6>
+						<p>info@envato.com<br>support@envato.com</p>
+					  </div>
+					</div>
+					<!-- End icon box-->
+					<!-- Start icon box-->
+					<div class="icon-box icon-xs sep-top-xs icon-gradient">
+					  <div class="icon-content img-circle"><i class="fa fa-clock-o"></i></div>
+					  <div class="icon-box-content">
+						<h6>Working Hours</h6>
+						<p>Mon / Friday<br>09:00 - 13.00 / 14:00 - 18:00</p>
+					  </div>
+					</div>
+					<!-- End icon box-->
+				  </div>
+				</div>
+				<div class="col-md-8 sep-top-2x">
+				  <h4 class="upper">Get In Touch With Us Today</h4>
+				  <div class="contact-form">
+					<div id="successMessage" style="display:none" class="alert alert-success text-center">
+					  <p><i class="fa fa-check-circle fa-2x"></i></p>
+					  <p>Thanks for sending your message! We'll get back to you shortly.</p>
+					</div>
+					<div id="failureMessage" style="display:none" class="alert alert-danger text-center">
+					  <p><i class="fa fa-times-circle fa-2x"></i></p>
+					  <p>There was a problem sending your message. Please, try again.</p>
+					</div>
+					<div id="incompleteMessage" style="display:none" class="alert alert-warning text-center">
+					  <p><i class="fa fa-exclamation-triangle fa-2x"></i></p>
+					  <p>Please complete all the fields in the form before sending.</p>
+					</div>
+					<form novalidate id="contactForm" action="php/contact.php" method="post" class="validate">
+					  <div class="row">
+						<div class="col-md-6 sep-top-xs">
+						  <div class="form-group">
+							<label for="name" class="upper">Your Name</label>
+							<input aria-required="true" id="name" placeholder="Enter name" name="senderName" class="form-control input-lg required" type="text">
+						  </div>
+						</div>
+						<div class="col-md-6 sep-top-xs">
+						  <div class="form-group">
+							<label for="email" class="upper">Your Email</label>
+							<input aria-required="true" id="email" placeholder="Enter email" name="senderEmail" class="form-control input-lg required email" type="email">
+						  </div>
+						</div>
+					  </div>
+					  <div class="row">
+						<div class="col-md-6 sep-top-xs">
+						  <div class="form-group">
+							<label for="phone" class="upper">Your Phone</label>
+							<input aria-required="true" id="phone" placeholder="Enter phone" name="phone" class="form-control input-lg required" type="text">
+						  </div>
+						</div>
+						<div class="col-md-6 sep-top-xs">
+						  <div class="form-group">
+							<label for="subject" class="upper">Your Subject</label>
+							<input aria-required="true" id="subject" placeholder="Enter Subject" name="subject" class="form-control input-lg required" type="text">
+						  </div>
+						</div>
+					  </div>
+					  <div class="row">
+						<div class="col-md-12 sep-top-xs">
+						  <div class="form-group">
+							<label for="comment" class="upper">Your comment</label>
+							<textarea aria-required="true" id="comment" placeholder="Enter comment" rows="4" name="comment" class="form-control input-lg required"></textarea>
+						  </div>
+						</div>
+					  </div>
+					  <div class="row">
+						<div class="col-md-12 sep-top-xs">
+						  <div class="form-group">
+							<button type="submit" data-wow-delay=".5s" class="btn btn-primary wow bounceInRight"><i class="fa fa-paper-plane"></i>&nbsp;Send message</button>
+						  </div>
+						</div>
+					  </div>
+					</form>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</section>
+
+		

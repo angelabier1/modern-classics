@@ -1,0 +1,536 @@
+<nav id="main-navigation" role="navigation" class="navbar navbar-fixed-top navbar-standard">
+		<!-- 	<a href="javascript:void(0)" class="search_button">
+				<i class="fa fa-search"></i>
+			</a> -->
+			<!-- Start Search form-->
+<!-- 			<form action="list_view.html" method="get" role="search" class="h_search_form">
+				<div class="container">
+					<h3 class="light">Find a Car with our Quick Search</h3>
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<div class="row">
+								<div class="col-md-6 f-pod">
+									<label class="sr-only">Postcode</label>
+									<input type="text" value="" placeholder="Postcode" name="" class="form-control input-lg">
+								</div>
+								<div class="col-md-6">
+									<label class="field select">
+										<select class="select" name="#">
+											<option value="0" selected="" disabled="">Body Type</option>
+											<option>Wagon</option>
+											<option>Minivan</option>
+											<option>Coupe</option>
+											<option>Crossover</option>
+											<option>Van</option>
+											<option>SUV</option>
+											<option>Minicar</option>
+											<option>Sedan</option>
+										</select>
+										<i class="arrow double"></i>
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<label class="field select">
+										<select class="select" name="#">
+											<option value="0" selected="" disabled="">Brand</option>
+											<option>Jaguar</option>
+											<option>BMW</option>
+											<option>Mercedes</option>
+											<option>Porsche</option>
+											<option>Nissan</option>
+											<option>Mazda</option>
+											<option>Acura</option>
+											<option>Audi</option>
+											<option>Bugatti</option>
+										</select>
+										<i class="arrow double"></i>
+									</label>
+								</div>
+								<div class="col-md-6">
+									<label class="field select">
+										<select class="select" name="#">
+											<option value="0" selected="" disabled="">Model</option>
+											<option>GTX</option>
+											<option>GTR</option>
+											<option>GTS</option>
+											<option>RLX</option>
+											<option>M6</option>
+											<option>S Class</option>
+											<option>C Class</option>
+											<option>B Class</option>
+											<option>A Class</option>
+										</select>
+										<i class="arrow double"></i>
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="filter_price_content">
+										<input type="text" value="" data-slider-min="10" data-slider-max="100" data-slider-step="10" data-slider-value="[20,60]" class="filter_price">
+										<div class="sep-top-xs">
+											<h6 class="pull-left light">Price</h6><h6 class="pull-right light">$&nbsp;<span class="price_current">20 - 60</span></h6>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-inline form-group">
+										<label class="field option">
+											<input type="checkbox" name="" checked>
+											<span class="checkbox" id="pad"></span> 
+											Verified
+										</label>
+										<label class="field option">
+											<input type="checkbox" name="" checked>
+											<span class="checkbox" id="pad"></span> 
+											Certified
+										</label>
+									</div>
+									<div class="form-inline form-group marged-15">
+										<label class="sr-only">status</label>
+										<label class="field option">
+											<input type="radio" name="" checked>
+											<span class="radio"></span> New               
+										</label>
+										<label class="field option">
+											<input type="radio" name="">
+											<span class="radio"></span> Used
+										</label>
+										<label class="field option">
+											<input type="radio" name="">
+											<span class="radio"></span> Resseler
+										</label>  
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="row">
+								<div class="col-md-6">
+									<label class="field select">
+										<select class="select" name="#">
+											<option value="0" selected="" disabled="">Min Year</option>
+											<option>2005</option>
+											<option>2006</option>
+											<option>2007</option>
+											<option>2008</option>
+											<option>2009</option>
+											<option>2010</option>
+											<option>2011</option>
+											<option>2012</option>
+											<option>2013</option>
+											<option>2014</option>
+											<option>2015</option>
+										</select>
+										<i class="arrow double"></i>
+									</label>
+								</div>
+								<div class="col-md-6">
+									<label class="field select">
+										<select class="select" name="#">
+											<option value="0" selected="" disabled="">Max Year</option>
+											<option>2005</option>
+											<option>2006</option>
+											<option>2007</option>
+											<option>2008</option>
+											<option>2009</option>
+											<option>2010</option>
+											<option>2011</option>
+											<option>2012</option>
+											<option>2013</option>
+											<option>2014</option>
+											<option>2015</option>
+										</select>
+										<i class="arrow double"></i>
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<label class="field select">
+										<select class="select" name="#">
+											<option value="0" selected="" disabled="">Min Mileage</option>
+											<option>10000</option>
+											<option>20000</option>
+											<option>30000</option>
+											<option>40000</option>
+											<option>50000</option>
+											<option>60000</option>
+											<option>70000</option>
+											<option>80000</option>
+											<option>90000</option>
+											<option>100000</option>
+										</select>
+										<i class="arrow double"></i>
+									</label>
+								</div>
+								<div class="col-md-6">
+									<label class="field select">
+										<select class="select" name="#">
+											<option value="0" selected="" disabled="">Max Mileage</option>
+											<option>10000</option>
+											<option>20000</option>
+											<option>30000</option>
+											<option>40000</option>
+											<option>50000</option>
+											<option>60000</option>
+											<option>70000</option>
+											<option>80000</option>
+											<option>90000</option>
+											<option>100000</option>
+										</select>
+										<i class="arrow double"></i>
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<label class="field select">
+										<select class="select" name="#">
+											<option value="0" selected="" disabled="">Transmission</option>
+											<option>5 Speed Manual</option>
+											<option>5 Speed Automatic</option>
+											<option>6 Speed Manual</option>
+											<option>6 Speed Automatic</option>
+											<option>7 Speed Manual</option>
+											<option>7 Speed Automatic</option>
+											<option>8 Speed Manual</option>
+											<option>8 Speed Automatic</option>
+										</select>
+										<i class="arrow double"></i>
+									</label>
+								</div>
+								<div class="col-md-6">
+									<label class="field select">
+										<select class="select" name="#">
+											<option value="0" selected="" disabled="">Body Color</option>
+											<option>Red</option>
+											<option>Black</option>
+											<option>White</option>
+											<option>Yellow</option>
+											<option>Brown</option>
+											<option>Grey</option>
+											<option>Silver</option>
+											<option>Gold</option>
+										</select>
+										<i class="arrow double"></i>
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<input type="submit" class="btn btn-block btn-primary btn-lg"  value="Find my vehicle now">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form> -->
+			<!-- End Search form-->
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle">
+						<i class="fa fa-align-justify fa-lg"></i>
+					</button>
+					<!-- <a href="#" class="navbar-brand"> -->
+					<%= link_to root_path, :class => "navbar-brand", method: :get do %>
+					     <%= image_tag("logo.png",:class => "logo-white" )%>
+					     <%= image_tag("logo-full-color.png",:class => "logo-dark" )%>
+						<!-- <img src="images/logo.png" alt="" class="logo-white"> -->
+						<!-- <img src="images/logo-full-color.png" alt="" class="logo-dark"> -->
+						<% end %>
+					<!-- </a> -->
+				</div>
+				<div class="navbar-collapse collapse">
+					<!-- <ul class="nav navbar-nav navbar-right service-nav">
+						<li>
+							<a id="dropdownMenuRent" href="#" data-toggle="dropdown" class="upper dropdown-toggle">Rent a car</a>
+							<div class="dropdown-menu widget-rent-box">
+								<form>
+									<div class="row">
+										<div class="col-md-6">
+											<label class="sr-only">Username or Email</label>
+											<input type="text" value="" placeholder="Username or Email" name="" class="form-control input-lg">
+										</div>
+										<div class="col-md-6">
+											<label class="sr-only">Username or Email</label>
+											<input type="text" value="" placeholder="Username or Email" name="" class="form-control input-lg">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<label class="sr-only">Username or Email</label>
+											<input type="text" value="" placeholder="Username or Email" name="" class="form-control input-lg">
+										</div>
+										<div class="col-md-6">
+											<label class="sr-only">Username or Email</label>
+											<input type="text" value="" placeholder="Username or Email" name="" class="form-control input-lg">
+										</div>
+									</div>
+									<div class="divider"></div>
+									<div class="row">
+										<div class="col-md-6">
+											<label class="sr-only">State</label>
+											<input type="text" value="" placeholder="State" name="" class="form-control input-lg">
+										</div>
+										<div class="col-md-6">
+											<label class="sr-only">Zip Code</label>
+											<input type="text" value="" placeholder="Zip Code" name="" class="form-control input-lg">
+										</div>
+									</div>
+									<div class="divider"></div>
+									<label>
+										<small>Car info</small>
+									</label>
+									<div class="row">
+										<div class="col-md-12">
+											<label class="field select">
+												<select class="select" name="#">
+													<option value="0" selected="" disabled="">Select a car</option>
+													<option value="1">Opel</option>
+													<option value="2">Ford</option>
+													<option value="3">GMC</option>
+													<option value="4">BMW</option>
+													<option value="5">Nissan</option>
+												</select>
+												<i class="arrow double"></i>
+											</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-inline form-group">
+												<label class="sr-only">Payment method</label>
+												<label class="field option">
+													<input type="radio" name="payment" checked><span class="radio"></span> <i class="fa fa-cc-visa fa-2x"></i>                 
+												</label>
+												
+												<label class="field option">
+													<input type="radio" name="payment"><span class="radio"></span> <i class="fa fa-cc-mastercard fa-2x"></i>  
+												</label>
+												
+												<label class="field option">
+													<input type="radio" name="payment"><span class="radio"></span> <i class="fa fa-paypal fa-2x"></i>
+												</label>  
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-9">
+											<label class="sr-only">Card Number</label>
+											<input type="text" value="" placeholder="Card Number" name="" class="form-control input-lg">
+										</div>
+										<div class="col-md-3">
+											<label class="sr-only">CVV2</label>
+											<input type="text" value="" placeholder="CVV2" name="" class="form-control input-lg">
+										</div>
+									</div>
+									<div class="divider"></div>
+									<div class="form-group">
+									  <button type="button" class="btn btn-primary btn-xs">Send</button>
+									</div>
+								</form>
+							</div>
+						</li>
+						<!-- <li>
+							<a id="dropdownMenuLogin" href="#" data-toggle="dropdown" class="upper dropdown-toggle">Login</a>
+							<div class="dropdown-menu widget-box">
+								<form>
+									<div class="form-group">
+										<label class="sr-only">Username or Email</label>
+										<input type="text" value="" placeholder="Username or Email" name="" class="form-control input-lg">
+									</div>
+									<div class="form-group">
+										<label class="sr-only">Password</label>
+										<input type="password" value="" placeholder="Password" name="" class="form-control input-lg">
+									</div>
+									<div class="form-inline form-group">
+										<button type="button" class="btn btn-primary btn-xs">Login</button>
+										<div class="pull-right">
+											<label class="field option">
+												<input type="checkbox" name="info" checked><span class="checkbox" id="pad"></span> 
+												Remenber                
+											</label>
+										</div>
+									</div>
+									<a href="#"><small>Lost your Password?</small></a>
+									<div class="btn-group btn-group-justified"> 
+										<a href="#" class="btn btn-facebook btn-block btn-xs">
+											<i class="fa fa-facebook pull-left"></i>Facebook
+										</a>
+										<a href="#" class="btn btn-twitter btn-block btn-xs">
+											<i class="fa fa-twitter pull-left"></i>Twitter
+										</a>
+									</div>
+								</form>
+							</div>
+						</li> -->
+						<!-- <li>
+							<a id="dropdownSignup" href="#" data-toggle="dropdown" class="dropdown-toggle">Sign up</a>
+							<div class="dropdown-menu widget-box">
+								<form>
+									<div class="form-group">
+										<label class="sr-only">Username or Email</label>
+										<input type="text" value="" placeholder="Username or Email" name="" class="form-control input-lg">
+									</div>
+									<div class="form-group">
+										<label class="sr-only">Password</label>
+										<input type="password" value="" placeholder="Password" name="" class="form-control input-lg">
+									</div>
+									<div class="form-group">
+										<label class="sr-only">Re-Password</label>
+										<input type="password" value="" placeholder="Re-Password" name="" class="form-control input-lg">
+									</div>
+									<div class="form-inline form-group">
+										<button type="button" class="btn btn-primary btn-block btn-xs">Sign up</button>
+									</div>
+									<div class="btn-group btn-group-justified"> 
+										<a href="#" class="btn btn-facebook btn-block btn-xs">
+											<i class="fa fa-facebook pull-left"></i>Facebook
+										</a>
+										<a href="#" class="btn btn-twitter btn-block btn-xs">
+											<i class="fa fa-twitter pull-left"></i>Twitter
+										</a>
+									</div>
+								</form>
+							</div>
+						</li> -->
+					<!-- </ul> --> <!-- -->
+					<button type="button" class="navbar-toggle"><i class="fa fa-close fa-lg"></i></button>
+					<ul class="nav yamm navbar-nav navbar-right main-nav">
+					<!-- 	<li class="dropdown">
+							<a href="#" data-toggle="dropdown" data-hover="dropdown" id="menu_item_Home" class="dropdown-toggle">Home<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="index.html">Home V1</a>
+								</li>
+								<li>
+									<a href="index1.html">Home V2</a>
+								</li>
+							</ul>
+						</li> -->
+						<li class="<%= 'active' if current_page?(listings_path) %>">
+							<%= link_to 'Listings', listings_path, method: :get %>
+						</li>
+						<li class="<%= 'active' if current_page?(pages_about_path) %>">
+							<%= link_to 'About Us', pages_about_path, method: :get %>
+						</li>
+						<!-- <li class="dropdown">
+							<a href="#"data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle">Listing<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="list_view.html">List View</a>
+								</li>
+								<li>
+									<a href="grid_view.html">Grid View</a>
+								</li>
+								<li>
+									<a href="vehicle_details.html">vehicle details</a>
+								</li>
+								<li class="dropdown-submenu">
+									<a href="#">Vehicle Comparison</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="2_Listing_comparison.html">2 Listing comparison</a>
+										</li>
+										<li>
+											<a href="3_Listing_comparison.html">3 Listing comparison</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li> -->
+						<li class="<%= 'active' if current_page?(pages_contact_path) %>">
+						<%= link_to 'Contact',pages_contact_path, method: :get %>
+							<!-- <a href="/contact">Contact Us</a> -->
+						</li>
+						<!-- <li class="dropdown yamm-fw">
+							<a href="#" data-toggle="dropdown" data-hover="dropdown" id="menu_item_Mega" data-ref="#" class="dropdown-toggle">Mega Menu<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<div class="yamm-content">
+										<div class="row">
+											<div class="col-md-3">
+												<h6 class="upper hidden-xs">Useful Links</h6>
+												<ul class="sep-top-xs widget widget-cat">
+													<li class="cat-item"><a href="#" class="upper">Toyota 2015</a></li>
+													<li class="cat-item"><a href="#" class="upper">Ferary journey</a></li>
+													<li class="cat-item"><a href="#" class="upper">Visiting GMC</a></li>
+													<li class="cat-item"><a href="#" class="upper">CarLux Affiliate</a></li>
+													<li class="cat-item"><a href="#" class="upper">CarLux Canada</a></li>
+												</ul>
+											</div>
+											<div class="col-md-3 hidden-xs">
+												<h6 class="upper">Latest News</h6>
+												<ul class="sep-top-xs widget widget-media">
+													<li class="media media-bordered clearfix"><a href="#" class="pull-left"><img src="images/blog/blog1-t.jpg" alt="" class="media-object img-circle"></a>
+														<div class="media-body">
+															<h6 class="media-heading"><a href="#">Blanditiis Praesentium</a></h6><small>Mars 8, 2015</small>
+															<p>Lorem de nous...</p>
+														</div>
+													</li>
+													<li class="media media-bordered clearfix"><a href="#" class="pull-left"><img src="images/blog/blog2-t.jpg" alt="" class="media-object img-circle"></a>
+														<div class="media-body">
+															<h6 class="media-heading"><a href="#">Blanditiis Praesentium</a></h6><small>January 28, 2015</small>
+															<p>Lorem de nous...</p>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-3 hidden-xs">
+												<h6 class="upper">From Envato</h6>
+												<div class="sep-top-xs">
+													<blockquote class="theme">
+														<p class="bold-quote upper">Create SEO friendly blog posts or a guest blog to write about an area of interest...</p>
+														<footer class="cite small">Envato Market</footer>
+													</blockquote>	
+												</div>
+											</div>
+											<div class="col-md-3 hidden-xs">
+												<h6 class="upper">CEO Message</h6>
+												<div class="sep-top-xs">
+													<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+													<p>Lorem Ipsum is simply dummy text.</p>
+												</div>
+												<div class="sep-top-xs"><a href="contact_us.html" class="btn btn-dark btn-bordered btn-block">Contact Us</a></div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li> -->
+						<!-- <li class="dropdown">
+							<a href="#"data-toggle="dropdown" data-hover="dropdown" id="menu_item_Blog" class="dropdown-toggle">Blog<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="blog.html">Blog List</a></li>
+								<li><a href="blog-detail.html">Blog detail</a></li>
+							</ul>
+						</li> -->
+						<!-- <li class="dropdown">
+							<a href="#" data-toggle="dropdown" data-hover="dropdown" id="menu_item_Pages" class="dropdown-toggle">Pages<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-submenu">
+									<a href="#" id="menu_item_Gallery">Gallery</a>
+									<ul class="dropdown-menu">
+										<li><a href="gallery-2.html">Gallery Grid no spacing</a></li>
+										<li><a href="gallery-3.html">Gallery Grid with spacing</a></li>
+										<li><a href="gallery.html">Gallery Masonry</a></li>
+									</ul>
+								</li>
+								<li><a href="pricing.html" >Pricing</a></li>
+								<li><a href="faq.html">FAQs</a></li>
+								<li><a href="element-boxed-page.html">Boxed Layout</a></li>
+								<li><a href="element-grid.html">Grid system</a></li>
+								<li><a href="element-typography.html">Typography</a></li>
+								<li><a href="element-buttons.html">Buttons</a></li>
+								<li><a href="icons.html">Icons</a></li>
+								<li><a href="error-404.html">404</a></li>
+								<li><a href="error-500.html">500</a></li>
+							</ul>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</nav>

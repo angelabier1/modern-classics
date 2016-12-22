@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @listing.year %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @listing.make %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @listing.model %>
+</p>
+
+<p>
+  <strong>Body style:</strong>
+  <%= @listing.body_style %>
+</p>
+
+<p>
+  <strong>Mileage:</strong>
+  <%= @listing.mileage %>
+</p>
+
+<p>
+  <strong>Transmission:</strong>
+  <%= @listing.transmission %>
+</p>
+
+<p>
+  <strong>Condition:</strong>
+  <%= @listing.condition %>
+</p>
+
+<p>
+  <strong>Fuel economy:</strong>
+  <%= @listing.fuel_economy %>
+</p>
+
+<p>
+  <strong>Engine size:</strong>
+  <%= @listing.engine_size %>
+</p>
+
+<p>
+  <strong>Cylinders:</strong>
+  <%= @listing.cylinders %>
+</p>
+
+<p>
+  <strong>Power:</strong>
+  <%= @listing.power %>
+</p>
+
+<p>
+  <strong>Fuel type:</strong>
+  <%= @listing.fuel_type %>
+</p>
+
+<p>
+  <strong>Vin:</strong>
+  <%= @listing.vin %>
+</p>
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %>

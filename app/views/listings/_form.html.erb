@@ -1,0 +1,73 @@
+<%= form_for(@listing) do |f| %>
+  <% if @listing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@listing.errors.count, "error") %> prohibited this listing from being saved:</h2>
+
+      <ul>
+      <% @listing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :year %><br>
+    <%= f.text_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :make %><br>
+    <%= f.text_field :make %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :body_style %><br>
+    <%= f.text_field :body_style %>
+  </div>
+  <div class="field">
+    <%= f.label :mileage %><br>
+    <%= f.text_field :mileage %>
+  </div>
+  <div class="field">
+    <%= f.label :transmission %><br>
+    <%= f.text_field :transmission %>
+  </div>
+  <div class="field">
+    <%= f.label :condition %><br>
+    <%= f.text_area :condition %>
+  </div>
+  <div class="field">
+    <%= f.label :fuel_economy %><br>
+    <%= f.text_field :fuel_economy %>
+  </div>
+  <div class="field">
+    <%= f.label :engine_size %><br>
+    <%= f.text_field :engine_size %>
+  </div>
+  <div class="field">
+    <%= f.label :cylinders %><br>
+    <%= f.text_field :cylinders %>
+  </div>
+  <div class="field">
+    <%= f.label :power %><br>
+    <%= f.text_field :power %>
+  </div>
+  <div class="field">
+    <%= f.label :fuel_type %><br>
+    <%= f.text_field :fuel_type %>
+  </div>
+  <div class="field">
+    <%= f.label :vin %><br>
+    <%= f.text_field :vin %>
+  </div>
+  <div class="field">
+    <%= f.label :overview %><br>
+    <%= f.text_field :overview %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

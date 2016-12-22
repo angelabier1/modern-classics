@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ModernClassics</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+  <noscript>
+  <%= stylesheet_link_tag 'styleNoJs' %>
+    </noscript>
+</head>
+<body>
+<div id="load"></div><!--[if lt IE 9]>
+    <![endif]-->
+<div class="page">
+<%= render "layouts/navigation" %>
+<%= yield %>
+<%= render "layouts/footer" %>
+
+</div>
+</body>
+</html>
